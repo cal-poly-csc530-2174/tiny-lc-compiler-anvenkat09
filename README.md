@@ -18,3 +18,7 @@ Steps:
 - The resulting output to javascript code is written to the file
   "testOutput.out" (It will be created if it doesn't exist already).
 - This code can then be compiled using a Javascript Compiler.
+
+***Important Note
+I could not get the lambda symbol to work in vim (it's supposed to work with ctrl+k+|+*),
+so I ended up just converting all the symbols to the word "lambda".
