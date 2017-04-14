@@ -1,3 +1,6 @@
+(**Anirudh Venkatesh
+This file contains the different datatypes which will be used when building the
+tree**)
 datatype expression =
      EXP_ID of string
    | EXP_NUM of int

@@ -1,3 +1,8 @@
+(**Anirudh Venkatesh
+This file builds the tokens. It contains a lot of code I wrote from 430, but
+most of it ends up not being used that much. The purpose is to just build tokens
+based off the string**)
+
 val keywords = ["else", "false", "function", "if", "new", "println", "return",
 "this", "true", "typeof", "undefined", "var", "while", "lambda", "ifleq0"]
 val mathExp = [#"{", #"}", #"(", #")", #"[", #"]", #",", #";", #"?", #":", #".",

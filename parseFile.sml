@@ -1,5 +1,8 @@
-use "tokenizer.sml";
-use "newast.sml";
+(**Anirudh Venkatesh
+This file does the parsing and building of the tree**)
+
+use "buildTokens.sml";
+use "astDataTypes.sml";
 
 fun parseExpression (tok: token) fstr =
 (**   if matchIdentifier tok then

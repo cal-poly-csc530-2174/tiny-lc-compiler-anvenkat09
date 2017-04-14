@@ -1,4 +1,8 @@
-use "parser.sml";
+(**Anirudh Venkatesh
+Main file which we run the program with. It calls the parse function which
+builds the tree. This file has all the code to output the tree as js code **)
+
+use "parseFile.sml";
 
 fun out file s = TextIO.output (file, s);
 
@@ -27,7 +31,7 @@ fun programString (PROGRAM {elems}) =
 
 fun printAST () =
    let
-      val outfile = TextIO.openOut("testOutput.out")
+      val outfile = TextIO.openOut("10k-primesOutput.out")
    in
       out outfile (programString (parse ()))
    end
