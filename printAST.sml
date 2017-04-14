@@ -14,7 +14,7 @@ fun expressionString (EXP_NUM n) =
   | expressionString (EXP_IFLEQ {guard: expression, thenstmt: expression, elsestmt: expression}) =
       ("(" ^ (expressionString guard) ^ "<=0 ?" ^ (expressionString thenstmt) ^ ":" ^ (expressionString elsestmt) ^ ")")
   | expressionString (EXP_PRINT {expr: expression}) = 
-      ("( println (" ^ (expressionString expr) ^ "))")
+      ("( console.log (" ^ (expressionString expr) ^ "))")
   | expressionString (EXP_STATEMENT {first: expression, second: expression})=
       ("(" ^ (expressionString first) ^ "(" ^ (expressionString second) ^ "))")
 
