@@ -4,7 +4,9 @@ Notes:
 
 Lambda Calculus to Javascript Parser
 
-This project was written using Standard-ML or SML. 
+This project was written using Standard-ML or SML. It segments the input
+file data into tokens, builds an abstract syntax tree, and outputs the desired
+result as Javascript Code. 
 
 Steps:
 
