@@ -10,7 +10,7 @@ fun expressionString (EXP_NUM n) =
    if n < 0 then "-" ^ (Int.toString (~n)) ^ " " else (Int.toString n) ^ " "
   | expressionString (EXP_ID s) = (String.toString s) ^ " "
   | expressionString (EXP_LAMBDA {id: string, returnedVal: expression})= 
-      ("(function(" ^id^"){ return " ^ (expressionString returnedVal) ^ "})\n") 
+      ("(function(" ^id^"){ return " ^ (expressionString returnedVal) ^ "})") 
   | expressionString (EXP_PLUS {left: expression, rht: expression})=
       ("(" ^(expressionString left) ^ " + " ^ (expressionString rht) ^ ")")
   | expressionString (EXP_TIMES {left: expression, rht: expression})=
