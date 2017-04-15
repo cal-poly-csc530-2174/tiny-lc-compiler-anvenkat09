@@ -31,7 +31,7 @@ fun programString (PROGRAM {elems}) =
 
 fun printAST () =
    let
-      val outfile = TextIO.openOut("10k-primesOutput.out")
+      val outfile = TextIO.openOut("10kprimesOutput.js")
    in
       out outfile (programString (parse ()))
    end
