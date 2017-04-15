@@ -152,9 +152,9 @@ fun parseProgram (tok: token) fstr =
       checkEOFParser tok
 ;
 
-fun parse () =
+fun parse fileName =
    let
-      val fstr = TextIO.openIn("primes-below-ten-thousand.rkt")
+      val fstr = TextIO.openIn(fileName)
       val tok = nextToken fstr
       val elementList = parseProgram tok fstr
    in

@@ -12,11 +12,12 @@ Steps:
 
 - To run this project, place all the files provided in the same directory. 
 - Compile the files using the sml compiler in the unix command line
-- When compiling "OutputJS.sml", call the function printAST(); upon standard
-      input. This triggers the program and passes in the
-      "primes-below-ten-thousand.rkt" file into the parser. 
+- When compiling "OutputJS.sml", call the function printAST ("filename"); upon standard
+      input. This triggers the program and passes in the specified file. 
+*****filename has to be in quotes*****
+
 - The resulting output to javascript code is written to the file
-  "10k-primesOutput.out" (It will be created if it doesn't exist already).
+  "testOutput.js" (It will be created if it doesn't exist already).
 - This code can then be compiled using a Javascript Compiler.
 
 ***Important Note

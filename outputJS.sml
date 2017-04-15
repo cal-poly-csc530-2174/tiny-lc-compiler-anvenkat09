@@ -29,11 +29,11 @@ and sourceElementsString els =
 fun programString (PROGRAM {elems}) =
    sourceElementsString elems
 
-fun printAST () =
+fun printAST fstr =
    let
-      val outfile = TextIO.openOut("10kprimesOutput.js")
+      val outfile = TextIO.openOut("testOutput.js")
    in
-      out outfile (programString (parse ()))
+      out outfile (programString (parse fstr))
    end
 ;
  
